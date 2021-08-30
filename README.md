@@ -43,21 +43,17 @@ Vous pouvez maintenant vérifier que l'installation s'est effectuée avec succè
 ---
 #### Exemple de **téléchargement** python 3.8.10 pour Windows 64bit
 
-<center>
-  <video width="500" controls preload> 
-      <source src="doc/python_download.mkv"></source>
-  </video>
-</center>
+
+
+https://user-images.githubusercontent.com/27356351/131276719-82fc4afa-abc0-4c1d-a5a6-6b9744aa03fd.mp4
+
 
 ---
 
 #### Exemple d'**installation** python 3.8.10 pour Windows 64bit
 
-<center>
-  <video width="500" controls preload> 
-      <source src="doc/installation_python_edited.mkv"></source>
-  </video>
-</center>
+https://user-images.githubusercontent.com/27356351/131276739-21e81191-f44e-4d7c-a9a7-fcb40909637e.mp4
+
 
 ---
 
