@@ -144,6 +144,8 @@ Voyons maintenant comment installer des librairies et modules additionnels. Pour
 
     pip install numpy
 
+https://user-images.githubusercontent.com/27356351/131576982-b54441e9-8448-4441-93d8-9fa8d1b26e88.mp4
+
 Les messages en jaune sont des *warning* et nous informe de potentiels problèmes, mais ne sont pas des *erreurs* et n'indiquent généralement pas l'échec de commandes. Pour vérifiez que l'installation de *numpy* s'est effectué avec succès, nous pouvons vérifier les libraries installées sur le système avec
 
     pip list
@@ -151,6 +153,8 @@ Les messages en jaune sont des *warning* et nous informe de potentiels problème
 Installons maintenant *jupyter lab* (attention à ne pas mettre d'espace entre *jupyer* et *lab* dans la commande pip!!!),
 
     pip install jupyterlab
+
+https://user-images.githubusercontent.com/27356351/131577764-b297431d-cd7d-431d-a0fb-2936b97a11fd.mp4
 
 Pas d'inquiétude, beaucoup de modules ont été installé en addition de *jupyter lab*. C'est normal et une très bonne chose. Simplement, `pip` a non seulement installé *jupyter lab* comme demandé, mais aussi toutes les dépendances nécessaires à *jupyter lab*!
 
@@ -182,11 +186,16 @@ Pour créer un nouvel environnement (*phs2223* sera ici le nom de ce nouvel envi
 
     python -m venv phs2223
 
+
+https://user-images.githubusercontent.com/27356351/131577994-4c5ab321-b317-4db0-8dbe-5f8d7ea4170d.mp4
+
 Maintenant pour installer des modules additionnels avec `pip`, nous devons *activer* cet environnement dans un terminal (*l'activation* doit être faite à chaque fois pour chaque nouveau terminal)
 
 **Windows**
 
     C:\Users\...\>python\phs2223\Scripts\activate
+    
+https://user-images.githubusercontent.com/27356351/131578111-20868b2c-c106-4998-b08f-5d3582f0c9da.mp4
 
 **Mac et Linux**
 
