@@ -92,6 +92,8 @@ Commands:
   ...
 ```
 
+https://user-images.githubusercontent.com/27356351/131553527-76f52bce-119a-46ad-aa23-74d53e48766d.mp4
+
 Si ce n'est pas le cas, **ne progressez pas plus loi**, il y a eu un problème lors de l'installation. Il arrive souvent que des problèmes soient causés par plusieurs installations python en conflits sur votre système. Si vous ne savez pas comment gérer plusieurs installations différentes sur le même système (c'est normal à ce point, je l'explique plus loin :wink: ), le plus simple est de s'assurer de désinstaller toute trace de python de votre système (*ATTENTION*: à faire seulement sur windows. Mac et Linux ont toujours au moins une version de python installée et utilisée par votre OS.) Reprenez ensuite les étapes précédentes en faisant attentions aux bonnes options à cocher et sélectionné. Si rien n'y fait, n'hésitez pas à me contacter!
 
 
@@ -107,7 +109,11 @@ C'est déjà compliqué! 'Terminal', 'CLI' (short for 'Command Line Interface'),
 
 Windows est équipé de 2 options pour le terminal; `cmd` et `powershell`. Pour ouvrir un nouveau terminal, ouvrez le start menu et tappez 'cmd' ou 'powershell' dans la barre de recherche. Lorsque le terminal est lancé de cette manière, vous serez toujours situé dans votre *home* directory.
 
+https://user-images.githubusercontent.com/27356351/131553445-c63f2a11-8836-4921-9b71-b576376006d3.mp4
+
 Une autre manière très utile pour ouvrir un terminal dans un directory spécifique est d'ouvrir celui-ci avec *explorer* et ensuite de `shift + right click` pour obtenir l'option `open powershell here`.
+
+https://user-images.githubusercontent.com/27356351/131553466-c29daa3c-6abc-41e5-9fdf-23f18ff9678d.mp4
 
 ### **Mac**
 
