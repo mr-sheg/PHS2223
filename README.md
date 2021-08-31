@@ -134,8 +134,75 @@ Voici une liste des commandes qui peuvent vous être utile. Bien sûr, toutes ne
 | `cd` (for Change Directory) | navigation à un autre directory | `cd Desktop` `cd /home/gsheehy/Desktop/`  | Linux, Mac, Win
 | `cd ..` | navigation au parent directory | `cd ..` | Linux, Mac, Win
 | `dir` | affiche le contenu du directory ou vous êtes | `dir` | Linux, Mac, Win
-| `ls` | affiche le contenu du directory ou vous êtes | `ls` | Linux, Mac
+| `ls` | affiche le contenu du directory ou vous êtes | `ls` | Linux, Mac |
+| `mkdir` | crée un nouveau directory | `mkdir directory_name` | Linux, Mac, Win
 
 
 # Utilisation de `pip`
+
+Voyons maintenant comment installer des librairies et modules additionnels. Pour ce faire, le plus facile est d'utiliser un *package manager*. Les *package manager* ne sont pas exclusifs et précèdent largement python. Bien que peu communs sur Windows, leur utilisation est une méthode fiable et robuste de gérer automatiquement le téléchargement et l'installation de programmes, ressources, extension, libraires, etc... à partir de *repositories* (spécifiquement *Package Indexes*) en ligne. Dans le cas de python, `pip` est un *package manager* permettant l'installation de libraries disponibles sur https://pypi.org/ (PyPI = Python Package Index). `Pip` est un CLI tool (Command Line Interface Tool) ce qui implique que son utilisation se fait via un terminal. Commençons par un exemple simple; l'installation de *numpy*. Pour ce faire, ouvrez un terminal et entrez la commande
+
+    pip install numpy
+
+Les messages en jaune sont des *warning* et nous informe de potentiels problèmes, mais ne sont pas des *erreurs* et n'indiquent généralement pas l'échec de commandes. Pour vérifiez que l'installation de *numpy* s'est effectué avec succès, nous pouvons vérifier les libraries installées sur le système avec
+
+    pip list
+
+Installons maintenant *jupyter lab* (attention à ne pas mettre d'espace entre *jupyer* et *lab* dans la commande pip!!!),
+
+    pip install jupyterlab
+
+Pas d'inquiétude, beaucoup de modules ont été installé en addition de *jupyter lab*. C'est normal et une très bonne chose. Simplement, `pip` a non seulement installé *jupyter lab* comme demandé, mais aussi toutes les dépendances nécessaires à *jupyter lab*!
+
+Finalement, voyons aussi comment désinstaller un module. Pour désinstaller *numpy* par exemple
+
+    pip uninstall numpy
+
+# Environnements virtuel Python
+
+Maintenant que vous savez vous servir de `pip` pour installer des librairies additionnelles, la prochaine étape est d'apprendre à créer et gérer des environnements virtuels. Pourquoi? Tout simplement parce que ce que nous avons fait dans la section précédente peut (dans certain cas) menez à des problèmes plus tard. Lorsque nous avons installer *numpy* et *jupyter*, nous les avons installé *system wide*.
+
+Ok, mais et alors?
+
+Considérons la situation suivante;
+Vous travaillez avec 2 équipes différentes sur 2 projets différents. Dans le projet 1, vous utilisez python 3.9 et *numpy* 1.21 alors que dans le projet 2, vous utilisez python 3.7 et *numpy* 1.14. Faîte-moi confiance, ce genre de situation est plus fréquente qu'il n'y paraît :wink:. Comment pouvons-nous alors avoir plusieurs versions différentes des modules installés *system wide*? Simplement, on ne peut pas! C'est pourquoi on doit utiliser des *environnements virtuels*!
+
+Pour faire simple, un environnement virtuel est un *directory* contenant une *copie locale* de python incluant son propre *Python binary* et ses propres modules additionnels. La méthode que nous utiliserons pour créer nos environnements virtuels est l'utilisation du module `venv` (https://docs.python.org/3/library/venv.html) qui fait partit du *Python Standard Library* (-> déjà installé, pas besoin de `pip install ...`).
+
+## Créer un nouvel environnement
+
+Avant tout, il faut décider où mettre le nouvel environnement. Je suggère fortement de créer un *directory* appelez `python/` dans votre *home folder* (*path* exacte dépend de votre OS et configuration) et d'y installer tous vos futures environnements. Comme ça, vous aurez toujours un accès rapide à partir d'un nouveau terminal (qui ouvre directement dans votre *home folder*). ATTENTION, une fois créer, déplacer un environnement peut avoir des conséquences et briser certaines choses... à éviter!
+
+Terminal:
+
+    mkdir python
+    cd python
+
+Pour créer un nouvel environnement (*phs2223* sera ici le nom de ce nouvel environnement),
+
+    python -m venv phs2223
+
+Maintenant pour installer des modules additionnels avec `pip`, nous devons *activer* cet environnement dans un terminal (*l'activation* doit être faite à chaque fois pour chaque nouveau terminal)
+
+**Windows**
+
+    C:\Users\...\>python\phs2223\Scripts\activate
+
+**Mac et Linux**
+
+    [...]$ source python/phs2223/bin/activate
+
+Lorsqu'un environnement est *activé*, vous aurez son nom entre parenthèse devant le prompt (ligne dans le terminal). Dans ce cas,
+
+**Windows**
+
+    (phs2223) C:\Users\...>
+
+**Mac et Linux**
+
+    (phs2223) [... ~]$
+
+Nous pouvons maintenant utiliser `pip` avec notre nouvel environnement comme précédemment ou pour installer une liste de dépendances (`requirement.txt`)
+
+# requirement.txt
 
