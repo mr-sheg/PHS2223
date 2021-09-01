@@ -232,3 +232,7 @@ Pour installer les packages d'un `requirement.txt`,
 
 ## requirement.txt de phs2223
 
+Télécharger maintenant le *repository* phs2223. Pour ce faire, retourner au haut de la page, cliquez sur *code*, puis *download as zip*. Faîtes l'extraction où vous voulez pour la suite. Procédez ensuite à l'installation avec `pip`.
+
+# Lancement de `jupyter lab`
+
