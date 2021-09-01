@@ -170,7 +170,7 @@ Installons *jupyter lab* (attention à ne pas mettre d'espace entre *jupyer* et 
 
     pip install jupyterlab
 
-https://user-images.githubusercontent.com/27356351/131577764-b297431d-cd7d-431d-a0fb-2936b97a11fd.mp4
+https://user-images.githubusercontent.com/27356351/131739126-50f540bc-f075-4ea5-a26a-8551c03c719b.mp4
 
 Pas d'inquiétude, beaucoup de modules ont été installé en addition de *jupyter lab*. C'est normal et une très bonne chose. Simplement, `pip` a non seulement installé *jupyter lab* comme demandé, mais aussi toutes les dépendances nécessaires à *jupyter lab*!
 
