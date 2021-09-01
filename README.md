@@ -148,15 +148,36 @@ https://user-images.githubusercontent.com/27356351/131576982-b54441e9-8448-4441-
 
 Les messages en jaune sont des *warning* et nous informe de potentiels problèmes, mais ne sont pas des *erreurs* et n'indiquent généralement pas l'échec de commandes. Pour vérifiez que l'installation de *numpy* s'est effectué avec succès, nous pouvons vérifier les libraries installées sur le système avec
 
+---
+
+### Warning important à régler
+
+Dans l'exemple vidéo, 2 `warnings` sont présents. Le premier est causé par le *path* `C:\Users\...\Python\Python38\Scripts` qui n'est pas dans le *windows PATH* (ce genre de chose n'arrive que sur windows :facepalm: ). Il faut régler ça!
+
+Le second warning est causé par une version de `pip` qui peut être mis à jour. Ce n'est pas *nécessaire*, mais très facile à régler:
+
+    pip install --upgrade pip
+
+---
+
+vérifions les `packages` installés
+
     pip list
 
-Installons maintenant *jupyter lab* (attention à ne pas mettre d'espace entre *jupyer* et *lab* dans la commande pip!!!),
+Installons *jupyter lab* (attention à ne pas mettre d'espace entre *jupyer* et *lab* dans la commande pip!!!),
+
+**ATTENTION** - *certains* packages doivent être installer en mode administateur (c'est le cas pour jupyter). Pour ce faire, ouvrez un terminal par `rightclick` + `run as administrator` puis
 
     pip install jupyterlab
 
 https://user-images.githubusercontent.com/27356351/131577764-b297431d-cd7d-431d-a0fb-2936b97a11fd.mp4
 
 Pas d'inquiétude, beaucoup de modules ont été installé en addition de *jupyter lab*. C'est normal et une très bonne chose. Simplement, `pip` a non seulement installé *jupyter lab* comme demandé, mais aussi toutes les dépendances nécessaires à *jupyter lab*!
+
+pour vérifier l'installation de jupyter
+
+    jupyter lab
+
 
 Finalement, voyons aussi comment désinstaller un module. Pour désinstaller *numpy* par exemple
 
@@ -244,3 +265,20 @@ https://user-images.githubusercontent.com/27356351/131731036-2448565b-8692-4d92-
 
 # Lancement de `jupyter lab`
 
+Nous voilà finalement à la dernière étape, ajouter notre environnement `phs2223` à jupyter.
+
+**Note** - Vous devez **aussi** avoir installé jupyter *system wide* (et une de ses dépendances: `ipykernel`)
+
+Si on lance `jupyter lab` présentement, nous n'aurons pas accès au *kernel* de notre nouvel environnement.
+
+Pour vérifier les *kernels* disponibles,
+
+    jupyter kernelspec list
+
+Pour ajouter le *kernel* d'un environnement, **dans un terminal où l'environnement est activé**,
+
+    python -m ipykernel install --user --name NOM_DE_LENVIRONNEMENT
+
+
+
+Vous pouvez maintenant lancer *jupyter* et exécuter les *jupyter notebooks* (`.ipynb`) du cours PHS2223!
