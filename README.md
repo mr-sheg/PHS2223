@@ -1,4 +1,23 @@
-# PHS2223
+- [Intro](#intro)
+  - [Conventions : le minimalisme!](#conventions--le-minimalisme)
+  - [Pip ou anaconda?](#pip-ou-anaconda)
+- [Installation de python](#installation-de-python)
+    - [Exemple de **téléchargement** python 3.8.10 pour Windows 64bit](#exemple-de-téléchargement-python-3810-pour-windows-64bit)
+    - [Exemple d'**installation** python 3.8.10 pour Windows 64bit](#exemple-dinstallation-python-3810-pour-windows-64bit)
+  - [Vérification de l'installation](#vérification-de-linstallation)
+- [Terminal et shell](#terminal-et-shell)
+  - [Terminal, CLI, prompt ou shell?](#terminal-cli-prompt-ou-shell)
+    - [**Windows**](#windows)
+    - [**Mac**](#mac)
+    - [**Linux**](#linux)
+    - [Commandes utiles](#commandes-utiles)
+- [Utilisation de `pip`](#utilisation-de-pip)
+    - [Warning important à régler](#warning-important-à-régler)
+- [Environnements virtuel Python](#environnements-virtuel-python)
+  - [Créer un nouvel environnement](#créer-un-nouvel-environnement)
+- [requirement.txt](#requirementtxt)
+  - [requirement.txt de phs2223](#requirementtxt-de-phs2223)
+- [Lancement de `jupyter lab`](#lancement-de-jupyter-lab)
 
 # Intro
 
