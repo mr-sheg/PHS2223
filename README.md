@@ -72,7 +72,7 @@ Si l'installation python a été un succès, vous devriez obtenir un message de 
  >>> 
 ```
 
-où `3.X.X` correspond à la version de python installée. Ensuite, vérifions aussi que `pip` a aussi été installé correctement (`pip` sera expliqué plus bas).  Pour ce faire, ouvrez un autre terminal ou *sortez* de l'interpréteur python (entrez la commande `>>> exit()` ou pesez `ctrl + d`). Entrez maintenant la commande
+où `3.X.X` correspond à la version de python installée. Ensuite, vérifions aussi que `pip` a aussi été installé correctement (`pip` sera expliqué plus bas).  Pour ce faire, ouvrez un autre terminal ou *sortez* de l'interpréteur python déjà ouvert (entrez la commande `>>> exit()` ou pesez `ctrl + d`). Entrez maintenant la commande
 
     pip
 
@@ -107,7 +107,7 @@ C'est déjà compliqué! 'Terminal', 'CLI' (short for 'Command Line Interface'),
 
 ### **Windows**
 
-Windows est équipé de 2 options pour le terminal; `cmd` et `powershell`. Pour ouvrir un nouveau terminal, ouvrez le start menu et tappez 'cmd' ou 'powershell' dans la barre de recherche. Lorsque le terminal est lancé de cette manière, vous serez toujours situé dans votre *home* directory.
+Windows est équipé de 2 options pour le terminal; `cmd` et `powershell`. Pour ouvrir un nouveau terminal, ouvrez le start menu et tappez 'cmd' ou 'powershell' dans la barre de recherche. Lorsque le terminal est lancé de cette manière, vous serez toujours situé dans votre *home directory*.
 
 https://user-images.githubusercontent.com/27356351/131553445-c63f2a11-8836-4921-9b71-b576376006d3.mp4
 
@@ -162,6 +162,10 @@ Finalement, voyons aussi comment désinstaller un module. Pour désinstaller *nu
 
     pip uninstall numpy
 
+Pour obtenir plus d'information sur `pip` et son utilisation,
+
+    pip help
+
 # Environnements virtuel Python
 
 Maintenant que vous savez vous servir de `pip` pour installer des librairies additionnelles, la prochaine étape est d'apprendre à créer et gérer des environnements virtuels. Pourquoi? Tout simplement parce que ce que nous avons fait dans la section précédente peut (dans certain cas) menez à des problèmes plus tard. Lorsque nous avons installer *numpy* et *jupyter*, nous les avons installé *system wide*.
@@ -214,4 +218,17 @@ Lorsqu'un environnement est *activé*, vous aurez son nom entre parenthèse deva
 Nous pouvons maintenant utiliser `pip` avec notre nouvel environnement comme précédemment ou pour installer une liste de dépendances (`requirement.txt`)
 
 # requirement.txt
+
+Maintenant que nous savons comment créer des environnements virtuels ainsi que d'y installer les packages additionnels que l'on veut, nous allons maintenant apprendre à partager ces environnements. Supposons ici que j'ai créé un environnement (ex: `/.../python/phs2223`) dans lequel j'ai installé plusieurs packages (ex: numpy, jupyter lab, matplotlib, sympy, ...) tous avec une version spécifique. Comment faire pour partager cette information pour que tous aient le même environnement? Je vous partage la liste des packages et vous passez la prochaine heure à faire du ```pip instal``` ? Non, trop long... Je vous partage mon dossier `/.../python/phs2223`? Non, problème de compatibilité entre les OS et trop lourd, ... Alors comment? Je vous donne un `requirement.txt`!
+
+Pour installer les packages d'un `requirement.txt`, 
+
+    pip install -r requirement.txt
+
+**NOTE** - assurez vous de
+
+1. Avoir *activer* votre environnement (sinon vous allez installer la liste *system wide*)
+2. D'être dans le dossier où se trouve `requirement.txt` (sinon vous pouvez spécifier le *absolute path* du `requirement.txt` dans la commande)
+
+## requirement.txt de phs2223
 
