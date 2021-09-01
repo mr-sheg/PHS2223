@@ -225,14 +225,22 @@ Pour installer les packages d'un `requirement.txt`,
 
     pip install -r requirement.txt
 
-**NOTE** - assurez vous de
+**NOTE** - assurez vous
 
-1. Avoir *activer* votre environnement (sinon vous allez installer la liste *system wide*)
+1. D'avoir *activer* votre environnement (sinon vous allez installer la liste *system wide*)
 2. D'être dans le dossier où se trouve `requirement.txt` (sinon vous pouvez spécifier le *absolute path* du `requirement.txt` dans la commande)
 
 ## requirement.txt de phs2223
 
 Télécharger maintenant le *repository* phs2223. Pour ce faire, retourner au haut de la page, cliquez sur *code*, puis *download as zip*. Faîtes l'extraction où vous voulez pour la suite. Procédez ensuite à l'installation avec `pip`.
+
+
+https://user-images.githubusercontent.com/27356351/131731006-01c67907-e85d-4519-b3d2-6eb918931243.mp4
+
+
+https://user-images.githubusercontent.com/27356351/131731036-2448565b-8692-4d92-859b-1a05977c8d4d.mp4
+
+
 
 # Lancement de `jupyter lab`
 
