@@ -154,6 +154,8 @@ Les messages en jaune sont des *warning* et nous informe de potentiels problème
 
 Dans l'exemple vidéo, 2 `warnings` sont présents. Le premier est causé par le *path* `C:\Users\...\Python\Python38\Scripts` qui n'est pas dans le *windows PATH* (ce genre de chose n'arrive que sur windows :facepalm: ). Il faut régler ça!
 
+https://user-images.githubusercontent.com/27356351/131740316-22e40c2f-832b-4486-97ea-cf7bf98faa76.mp4
+
 Le second warning est causé par une version de `pip` qui peut être mis à jour. Ce n'est pas *nécessaire*, mais très facile à régler:
 
     pip install --upgrade pip
@@ -177,6 +179,8 @@ Pas d'inquiétude, beaucoup de modules ont été installé en addition de *jupyt
 pour vérifier l'installation de jupyter
 
     jupyter lab
+
+https://user-images.githubusercontent.com/27356351/131740525-2e53626c-2d11-486b-be7e-853dc98242ad.mp4
 
 
 Finalement, voyons aussi comment désinstaller un module. Pour désinstaller *numpy* par exemple
@@ -279,6 +283,6 @@ Pour ajouter le *kernel* d'un environnement, **dans un terminal où l'environnem
 
     python -m ipykernel install --user --name NOM_DE_LENVIRONNEMENT
 
-
+https://user-images.githubusercontent.com/27356351/131739763-8cf06327-a18e-4cf6-9a05-1023deaeffb8.mp4
 
 Vous pouvez maintenant lancer *jupyter* et exécuter les *jupyter notebooks* (`.ipynb`) du cours PHS2223!
