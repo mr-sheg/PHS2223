@@ -19,10 +19,22 @@ Voici un résumé des étapes et commandes à utiliser
    - ```python -m ipykernel install --user --name phs2223```
 
 
+## Ressources pour apprendre python
+
+- [The Python Tutorial](https://docs.python.org/3/tutorial/index.html)
+- [Youtube - Socratica](https://www.youtube.com/watch?v=bY6m6_IIN94&list=PLi01XoE8jYohWFPpC17Z-wWhPOSuh8Er-)
+- [Codeacademy - Python](https://www.codecademy.com/learn/learn-python-3)
+- [Coursera - Python for Everybody](https://www.coursera.org/specializations/python)
+- [Youtube - GSArchives (mon channel)](https://www.youtube.com/watch?v=6IjvPsbofRc&list=PLnzBBbvhjz4X3htDbNF0aJEDVtny48GI0)
+- [NumPy for MATLAB users](https://numpy.org/doc/stable/user/numpy-for-matlab-users.html)
 
 ---
 
+# Table des Matières
+
 - [Cheat-sheet](#cheat-sheet)
+  - [Ressources pour apprendre python](#ressources-pour-apprendre-python)
+- [Table des Matières](#table-des-matières)
 - [Intro](#intro)
   - [Convention : le minimalisme!](#convention--le-minimalisme)
   - [Pip ou anaconda?](#pip-ou-anaconda)
@@ -73,7 +85,7 @@ Lors d'une installation sur Windows. Assurez-vous de bien sélectionner les opti
 1. `Customize installation`
 1. Cochez toutes les `advanced options`
 1. Assurez-vous que l'`install location` soit bien `C:\Program Files\Python38`
-1. À la fin de l'installation si vous avez l'option `Disable Path length limit` **faîte le**!!!
+1. À la fin de l'installation si vous avez l'option `Disable Path length limit` **faite le**!!!
 
 Vous pouvez maintenant vérifier que l'installation s'est effectuée avec succès en ouvrant un terminal et en entrant la commande
 
@@ -125,12 +137,12 @@ Commands:
 
 https://user-images.githubusercontent.com/27356351/131553527-76f52bce-119a-46ad-aa23-74d53e48766d.mp4
 
-Si ce n'est pas le cas, **ne progressez pas plus loin**, il y a eu un problème lors de l'installation. Il arrive souvent que des problèmes soient causés par plusieurs installations python en conflits sur votre système. Si vous ne savez pas comment gérer plusieurs installations différentes sur le même système (c'est normal à ce point, je l'explique plus loin :wink: ), le plus simple est de s'assurer de désinstaller toute trace de python de votre système (*ATTENTION*: à faire seulement sur windows. Mac et Linux ont toujours au moins une version de python installée et utilisée par votre OS.) Reprenez ensuite les étapes précédentes en faisant attentions aux bonnes options à cocher et sélectionné. Si rien n'y fait, n'hésitez pas à me contacter!
+Si ce n'est pas le cas, **ne progressez pas plus loin**, il y a eu un problème lors de l'installation. Il arrive souvent que des problèmes soient causés par plusieurs installations python en conflits sur votre système. Si vous ne savez pas comment gérer plusieurs installations différentes sur le même système (c'est normal à ce point, je l'explique plus loin :wink: ), le plus simple est de s'assurer de désinstaller toute trace de python de votre système (*ATTENTION*: à faire seulement sur windows. Mac et Linux ont toujours au moins une version de python installée et utilisée par votre OS.) Reprenez ensuite les étapes précédentes en faisant attention aux bonnes options à cocher et sélectionner. Si rien n'y fait, n'hésitez pas à me contacter!
 
 
 # Terminal et shell
 
-À partir de maintenant, nous nous servirons souvent du terminal pour différentes tâches comme installer des librairies, gérez des environnements python et lancer jupyter. Je sais, je sais, le terminal est un petit monstre caché aux tréfonds des ordinateurs modernes qui terrifie tous ceux qui ne savent pas déjà s'en servir. N'ayez crainte! Je serai votre guide et ensemble nous saurons bien illuminez ces coins sombres qui hante vos cauchemars informatiques!
+À partir de maintenant, nous nous servirons souvent du terminal pour différentes tâches comme installer des librairies, gérer des environnements python et lancer jupyter. Je sais, je sais, le terminal est un petit monstre caché aux tréfonds des ordinateurs modernes qui terrifie tous ceux qui ne savent pas déjà s'en servir. N'ayez crainte! Je serai votre guide et ensemble nous saurons bien illuminez ces coins sombres qui hante vos cauchemars informatiques!
 
 ## Terminal, CLI, prompt ou shell?
 
