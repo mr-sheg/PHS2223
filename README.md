@@ -2,8 +2,6 @@
   - [Conventions : le minimalisme!](#conventions--le-minimalisme)
   - [Pip ou anaconda?](#pip-ou-anaconda)
 - [Installation de python](#installation-de-python)
-    - [Exemple de **téléchargement** python 3.8.10 pour Windows 64bit](#exemple-de-téléchargement-python-3810-pour-windows-64bit)
-    - [Exemple d'**installation** python 3.8.10 pour Windows 64bit](#exemple-dinstallation-python-3810-pour-windows-64bit)
   - [Vérification de l'installation](#vérification-de-linstallation)
 - [Terminal et shell](#terminal-et-shell)
   - [Terminal, CLI, prompt ou shell?](#terminal-cli-prompt-ou-shell)
@@ -21,7 +19,7 @@
 
 # Intro
 
-Bonjours et bienvenu!
+Bonjours et bienvenue!
 Vous trouverez ici des exemples et démos de l'utilisation de **python** dans la résolution de problèmes liés au cours *PHS2223 - Introduction à l'optique moderne*. Si vous avez des questions n'hésitez pas à me contacter !
 
 
@@ -33,10 +31,10 @@ Comme à mon habitude, je privilégie toujours une approche *simple* plutôt que
 
 Si vous êtes débutant python ou n'avez aucune idée de ce dont je parle je vous suggère d'aller lire ce [résumé de la situation](https://www.askpython.com/python/conda-vs-pip). Pour faire simple, je n'utilise pas et ne recommande pas l'utilisation d'anaconda (sauf exception, voir plus bas). Du point de vue pédagogique, l'utilisation d'anaconda fait en sorte que vous n'avez pas à développer plusieurs connaissances, habiletés et pratiques importantes (selon moi) en lien avec l'installation et la gestion de votre système et environnement python. C’est-à-dire que l'utilisation d'anaconda s'avère (toujours selon moi) détrimentale à votre apprentissage et à la progression de vos habiletés en programmation. Ceci est, bien sur, uniquement mon opinion et vous êtes libre de vous servir des outils que vous voulez :wink:.
 
-**exception**
+**Exceptions**
 
-- Vous n'êtes pas sur un système sur lequel vous avez les droits administrateur -> pip a besoin des droits administrateur dans certains cas -> utilisez anaconda
-- Vous travaillez avec d'autres sur un projet utilisant un environnement anaconda -> gardez anaconda
+- Vous n'êtes pas sur un système sur lequel vous avez les droits administrateur -> pip a besoin des droits administrateur dans certains cas -> utilisez *anaconda*
+- Vous travaillez avec d'autres sur un projet utilisant un environnement anaconda -> gardez *anaconda*
 
 ---
 
@@ -44,7 +42,7 @@ Si vous êtes débutant python ou n'avez aucune idée de ce dont je parle je vou
 
 La première étape pour se servir de python est bien sûr de l'installer sur son système. Je recommande l'installation de la version *python 3.8 64bit* (au moment de l'écriture de ce guide). Pour ce faire, téléchargez la version la plus récente de *python 3.8* pour votre système d'exploitation à [python.org](https://www.python.org/).
 
-Procéder ensuite à l'installation sur votre système.
+**NOTE 32bit vs 64bit** la version 32bit fonctionnerait aussi, mais vous n'auriez accès qu'à 4GB de mémoire. ([plus d'info](https://www.hellotech.com/blog/whats-the-difference-between-32-bit-and-64-bit))
 
 Lors d'une installation sur Windows. Assurez-vous de bien sélectionner les options suivantes ou leurs équivalents ;
 
@@ -59,17 +57,8 @@ Vous pouvez maintenant vérifier que l'installation s'est effectuée avec succè
     python
 
 
----
-### Exemple de **téléchargement** python 3.8.10 pour Windows 64bit
-
-
-
 https://user-images.githubusercontent.com/27356351/131276719-82fc4afa-abc0-4c1d-a5a6-6b9744aa03fd.mp4
 
-
----
-
-### Exemple d'**installation** python 3.8.10 pour Windows 64bit
 
 https://user-images.githubusercontent.com/27356351/131276739-21e81191-f44e-4d7c-a9a7-fcb40909637e.mp4
 
@@ -113,7 +102,7 @@ Commands:
 
 https://user-images.githubusercontent.com/27356351/131553527-76f52bce-119a-46ad-aa23-74d53e48766d.mp4
 
-Si ce n'est pas le cas, **ne progressez pas plus loi**, il y a eu un problème lors de l'installation. Il arrive souvent que des problèmes soient causés par plusieurs installations python en conflits sur votre système. Si vous ne savez pas comment gérer plusieurs installations différentes sur le même système (c'est normal à ce point, je l'explique plus loin :wink: ), le plus simple est de s'assurer de désinstaller toute trace de python de votre système (*ATTENTION*: à faire seulement sur windows. Mac et Linux ont toujours au moins une version de python installée et utilisée par votre OS.) Reprenez ensuite les étapes précédentes en faisant attentions aux bonnes options à cocher et sélectionné. Si rien n'y fait, n'hésitez pas à me contacter!
+Si ce n'est pas le cas, **ne progressez pas plus loin**, il y a eu un problème lors de l'installation. Il arrive souvent que des problèmes soient causés par plusieurs installations python en conflits sur votre système. Si vous ne savez pas comment gérer plusieurs installations différentes sur le même système (c'est normal à ce point, je l'explique plus loin :wink: ), le plus simple est de s'assurer de désinstaller toute trace de python de votre système (*ATTENTION*: à faire seulement sur windows. Mac et Linux ont toujours au moins une version de python installée et utilisée par votre OS.) Reprenez ensuite les étapes précédentes en faisant attentions aux bonnes options à cocher et sélectionné. Si rien n'y fait, n'hésitez pas à me contacter!
 
 
 # Terminal et shell
