@@ -1,5 +1,30 @@
+Bonjours et bienvenue!
+Vous trouverez ici des exemples et démos de l'utilisation de **python** dans la résolution de problèmes liés au cours *PHS2223 - Introduction à l'optique moderne*. Si vous avez des questions n'hésitez pas à me contacter !
+
+---
+# Cheat-sheet
+
+Voici un résumé des étapes et commandes à utiliser
+
+1. Télécharger python 3.8.X 64 bit (https://www.python.org/)
+2. Installer python
+3. Installer jupyter lab *system-wide* (en tant que root/admin)
+   - ```pip install jupyterlab```
+1. Télécharger et unzip le repository
+4. Créer un environnement virtuel `phs2223`
+   - ```python -m venv phs2223```
+5. Installer les dépendances (`requirement.txt`)
+   - ```pip install -r requirement.txt```
+1. Ajouter le kernel de l'environnement à jupyter
+   - ```python -m ipykernel install --user --name phs2223```
+
+
+
+---
+
+- [Cheat-sheet](#cheat-sheet)
 - [Intro](#intro)
-  - [Conventions : le minimalisme!](#conventions--le-minimalisme)
+  - [Convention : le minimalisme!](#convention--le-minimalisme)
   - [Pip ou anaconda?](#pip-ou-anaconda)
 - [Installation de python](#installation-de-python)
   - [Vérification de l'installation](#vérification-de-linstallation)
@@ -17,14 +42,12 @@
   - [requirement.txt de phs2223](#requirementtxt-de-phs2223)
 - [Lancement de `jupyter lab`](#lancement-de-jupyter-lab)
 
+
+---
 # Intro
 
-Bonjours et bienvenue!
-Vous trouverez ici des exemples et démos de l'utilisation de **python** dans la résolution de problèmes liés au cours *PHS2223 - Introduction à l'optique moderne*. Si vous avez des questions n'hésitez pas à me contacter !
-
-
-## Conventions : le minimalisme!
-Comme à mon habitude, je privilégie toujours une approche *simple* plutôt que *facile* (simple is better!). Je m'explique, par *simple*, j'entends une approche nécessitant le moins de *composantes* ou *libraries*. Par *facile*, j'entends généralement une approche nécessitant moins de *connaissance* ou *habiletés*. Par exemple, je préfère utiliser le terminal plutôt qu'une interface graphique pour plusieurs tâches. Je préfère manuellement installer les librairies ou modules que j'utilise (et uniquement ceux-là) plutôt que d'installer un environnement comprenant *tout ce qui peut être nécessaire*... ce qui m'amène à **pip** et **anaconda**...
+## Convention : le minimalisme!
+Comme à mon habitude, je privilégie toujours une approche *simple* plutôt que *facile* (simple is better!). Je m'explique, par *simple*, j'entends une approche nécessitant le moins de *composantes* ou *libraries*. Par *facile*, j'entends généralement une approche nécessitant moins de *connaissances* ou *habiletés*. Par exemple, je préfère utiliser le terminal plutôt qu'une interface graphique pour plusieurs tâches. Je préfère manuellement installer les librairies ou modules que j'utilise (et uniquement ceux-là) plutôt que d'installer un environnement comprenant *tout ce qui peut être nécessaire*... ce qui m'amène à **pip** et **anaconda**...
 
 
 ## Pip ou anaconda?
