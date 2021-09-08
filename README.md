@@ -48,7 +48,7 @@ Voici un résumé des étapes et commandes à utiliser
     - [Commandes utiles](#commandes-utiles)
 - [Utilisation de `pip`](#utilisation-de-pip)
     - [Warning important à régler](#warning-important-à-régler)
-- [Environnements virtuel Python](#environnements-virtuel-python)
+- [Environnements virtuels Python](#environnements-virtuels-python)
   - [Créer un nouvel environnement](#créer-un-nouvel-environnement)
 - [requirement.txt](#requirementtxt)
   - [requirement.txt de phs2223](#requirementtxt-de-phs2223)
@@ -142,7 +142,7 @@ Si ce n'est pas le cas, **ne progressez pas plus loin**, il y a eu un problème 
 
 # Terminal et shell
 
-À partir de maintenant, nous nous servirons souvent du terminal pour différentes tâches comme installer des librairies, gérer des environnements python et lancer jupyter. Je sais, je sais, le terminal est un petit monstre caché aux tréfonds des ordinateurs modernes qui terrifie tous ceux qui ne savent pas déjà s'en servir. N'ayez crainte! Je serai votre guide et ensemble nous saurons bien illuminez ces coins sombres qui hante vos cauchemars informatiques!
+À partir de maintenant, nous nous servirons souvent du terminal pour différentes tâches comme installer des librairies, gérer des environnements python et lancer jupyter. Je sais, je sais, le terminal est un petit monstre caché aux tréfonds des ordinateurs modernes qui terrifie tous ceux qui ne savent pas déjà s'en servir. N'ayez crainte! Je serai votre guide et ensemble nous saurons bien illuminez ces coins sombres qui hantent vos cauchemars informatiques!
 
 ## Terminal, CLI, prompt ou shell?
 
@@ -234,20 +234,20 @@ Pour obtenir plus d'information sur `pip` et son utilisation,
 
     pip help
 
-# Environnements virtuel Python
+# Environnements virtuels Python
 
-Maintenant que vous savez vous servir de `pip` pour installer des librairies additionnelles, la prochaine étape est d'apprendre à créer et gérer des environnements virtuels. Pourquoi? Tout simplement parce que ce que nous avons fait dans la section précédente peut (dans certain cas) menez à des problèmes plus tard. Lorsque nous avons installer *numpy* et *jupyter*, nous les avons installé *system wide*.
+Maintenant que vous savez vous servir de `pip` pour installer des librairies additionnelles, la prochaine étape est d'apprendre à créer et gérer des environnements virtuels. Pourquoi? Tout simplement parce que ce que nous avons fait dans la section précédente peut (dans certain cas) menez à des problèmes plus tard. Lorsque nous avons installé *numpy* et *jupyter*, nous les avons installés *system wide*.
 
 Ok, mais et alors?
 
 Considérons la situation suivante;
-Vous travaillez avec 2 équipes différentes sur 2 projets différents. Dans le projet 1, vous utilisez python 3.9 et *numpy* 1.21 alors que dans le projet 2, vous utilisez python 3.7 et *numpy* 1.14. Faîte-moi confiance, ce genre de situation est plus fréquente qu'il n'y paraît :wink:. Comment pouvons-nous alors avoir plusieurs versions différentes des modules installés *system wide*? Simplement, on ne peut pas! C'est pourquoi on doit utiliser des *environnements virtuels*!
+Vous travaillez avec 2 équipes différentes sur 2 projets différents. Dans le projet 1, vous utilisez python 3.9 et *numpy* 1.21 alors que dans le projet 2, vous utilisez python 3.7 et *numpy* 1.14. Faites-moi confiance, ce genre de situation est plus fréquent qu'il n'y paraît :wink:. Comment pouvons-nous alors avoir plusieurs versions différentes des modules installés *system wide*? Simplement, on ne peut pas! C'est pourquoi on doit utiliser des *environnements virtuels*!
 
 Pour faire simple, un environnement virtuel est un *directory* contenant une *copie locale* de python incluant son propre *Python binary* et ses propres modules additionnels. La méthode que nous utiliserons pour créer nos environnements virtuels est l'utilisation du module `venv` (https://docs.python.org/3/library/venv.html) qui fait partit du *Python Standard Library* (-> déjà installé, pas besoin de `pip install ...`).
 
 ## Créer un nouvel environnement
 
-Avant tout, il faut décider où mettre le nouvel environnement. Je suggère fortement de créer un *directory* appelez `python/` dans votre *home folder* (*path* exacte dépend de votre OS et configuration) et d'y installer tous vos futures environnements. Comme ça, vous aurez toujours un accès rapide à partir d'un nouveau terminal (qui ouvre directement dans votre *home folder*). ATTENTION, une fois créer, déplacer un environnement peut avoir des conséquences et briser certaines choses... à éviter!
+Avant tout, il faut décider où mettre le nouvel environnement. Je suggère fortement de créer un *directory* appelé `python/` dans votre *home folder* (*path* exacte dépend de votre OS et configuration) et d'y installer tous vos futures environnements. Comme ça, vous aurez toujours un accès rapide à partir d'un nouveau terminal (qui ouvre directement dans votre *home folder*). ATTENTION, une fois créé, déplacer un environnement peut avoir des conséquences et briser certaines choses... à éviter!
 
 Terminal:
 
@@ -295,12 +295,12 @@ Pour installer les packages d'un `requirement.txt`,
 
 **NOTE** - assurez vous
 
-1. D'avoir *activer* votre environnement (sinon vous allez installer la liste *system wide*)
+1. D'avoir *activé* votre environnement (sinon vous allez installer la liste *system wide*)
 2. D'être dans le dossier où se trouve `requirement.txt` (sinon vous pouvez spécifier le *absolute path* du `requirement.txt` dans la commande)
 
 ## requirement.txt de phs2223
 
-Télécharger maintenant le *repository* phs2223. Pour ce faire, retourner au haut de la page, cliquez sur *code*, puis *download as zip*. Faîtes l'extraction où vous voulez pour la suite. Procédez ensuite à l'installation avec `pip`.
+Téléchargez maintenant le *repository* phs2223. Pour ce faire, retourner au haut de la page, cliquez sur *code*, puis *download as zip*. Faîtes l'extraction où vous voulez pour la suite. Procédez ensuite à l'installation avec `pip`.
 
 
 https://user-images.githubusercontent.com/27356351/131731006-01c67907-e85d-4519-b3d2-6eb918931243.mp4
@@ -312,7 +312,7 @@ https://user-images.githubusercontent.com/27356351/131731036-2448565b-8692-4d92-
 
 # Lancement de `jupyter lab`
 
-Nous voilà finalement à la dernière étape, ajouter notre environnement `phs2223` à jupyter.
+Nous voilà finalement à la dernière étape: ajouter notre environnement `phs2223` à jupyter.
 
 **Note** - Vous devez **aussi** avoir installé jupyter *system wide* (et une de ses dépendances: `ipykernel`)
 
