@@ -1,4 +1,7 @@
 [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/SheehyG/PHS2223/master)
+
+---
+
 Bonjours et bienvenue!
 Vous trouverez ici des exemples et démos de l'utilisation de **python** dans la résolution de problèmes liés au cours _PHS2223 - Introduction à l'optique moderne_. Si vous avez des questions n'hésitez pas à me contacter !
 
